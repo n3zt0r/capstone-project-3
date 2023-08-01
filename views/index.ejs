@@ -1,0 +1,21 @@
+<%- include("header.ejs") %>
+
+    <form action="/" method="post">
+        <input type="submit" name="submit" value="+">
+        <input type="text" name="new-task" placeholder="Agregar nueva tarea" autocomplete="off" required>
+    </form>
+
+    <ul class="tasklist">
+        <% let count=0 %>
+            <% todayTask.forEach(element=> { %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p>
+                        <%= element %>
+                    </p>
+                </div>
+                <% count++ %>
+                    <% }) %>
+    </ul>
+
+    <%- include("footer.ejs") %>

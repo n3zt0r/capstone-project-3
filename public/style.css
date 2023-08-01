@@ -1,0 +1,156 @@
+:root {
+    --principal-bcolor: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72);
+    --principal-color: #FFFFFF;
+    --secondary-color: #7C9D96;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--principal-bcolor);
+    min-height: 100vh;
+}
+
+::placeholder {
+    color: #008793;
+    font-weight: bold;
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 25%);
+}
+
+nav li {
+    margin: 0px 25px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--principal-color);
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+h1 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 40%);
+    border-radius: 20px;
+    color: var(--principal-color);
+    margin: 40px 0px 20px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 55px;
+    font-size: 1.75rem;
+}
+
+form {
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasklist {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 30%);
+    border-radius: 20px;
+    width: calc(300px - 40px);
+    min-height: calc(52.4px * 8);
+    padding: 20px;
+}
+
+.item {
+    padding: 15px;
+}
+
+.item p {
+    font-size: 1.25rem;
+    padding-left: 10px;
+    color: #FFFFFF;
+    word-break: break-word;
+}
+
+input[type=submit] {
+    background-color: #00bf72;
+    color: #051937;
+    border-radius: 50%;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 50%);
+    color: var(--principal-color);
+}
+
+input[type=submit]:focus {
+    width: 55px;
+    height: 55px;
+}
+
+input:checked+p {
+    font-style: oblique;
+    text-decoration: line-through #004d7a;
+}
+
+input[type=text] {
+    position: relative;
+    right: 40px;
+    height: 40px;
+    z-index: -1;
+    border: 0;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 10%);
+    color: #7C9D96;
+    padding: 0 20px 0 60px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+div {
+    display: flex;
+}
+
+footer {
+    clear: both;
+    margin: 25px 0;
+}
+
+footer p {
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 875px) {
+    input[type=text] {
+        background-color: rgba(255, 255, 255, 100%);
+    }
+
+    footer {
+        clear: both;
+        margin: 25px 0 100px;
+    }
+}
