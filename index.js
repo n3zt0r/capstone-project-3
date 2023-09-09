@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import _ from "lodash";
 
-mongoose.connect(`mongodb+srv://admin-nestor:Daniela071011@cluster0.2qbqxoi.mongodb.net/`);
+mongoose.connect(`mongodb+srv://admin-nestor:Daniela071011@cluster0.2qbqxoi.mongodb.net/?retryWrites=true&w=majority`);
 
 const { Schema, model } = mongoose;
 const app = express();

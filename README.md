@@ -14,3 +14,6 @@ v2.0
 -ADD: loadsh dependece
 -DELETE: date.js file
 -DELETE: work.ejs file
+
+v2.0
+-FIX: Database connection
