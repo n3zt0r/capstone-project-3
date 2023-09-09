@@ -63,7 +63,7 @@ h1 {
     font-size: 1.5rem;
 }
 
-form {
+form.add-button {
     position: fixed;
     left: 25px;
     bottom: 25px;
@@ -90,7 +90,7 @@ form {
     word-break: break-word;
 }
 
-input[type=submit] {
+.add-bttn {
     background-color: #00bf72;
     color: #051937;
     border-radius: 50%;

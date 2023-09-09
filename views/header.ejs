@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>To Do List</title>
+    <title>To Do List v2.0</title>
 </head>
 
 <body>
@@ -15,17 +15,13 @@
                 <a href="/">Hoy</a>
             </li>
             <li>
-                <a href="/work">Trabajo</a>
+                <a href="/trabajo">Trabajo</a>
             </li>
         </ul>
     </nav>
 
     <div class="container">
-        <% if (locals.day) { %>
-            <h1>
-                <%= day %>, <%= new Date().getDate() %> de <%= month %>
-            </h1>
-            <% } else { %>
-                <h1>Lista del trabajo</h1>
-                <% } %>
+        <h1>
+            Lista de <%= title %>
+        </h1>
     </div>
